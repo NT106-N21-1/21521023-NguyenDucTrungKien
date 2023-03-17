@@ -101,15 +101,15 @@
             // 
             // btnTinh
             // 
-            btnTinh.Location = new Point(362, 194);
+            btnTinh.Location = new Point(356, 194);
             btnTinh.Name = "btnTinh";
-            btnTinh.Size = new Size(112, 64);
+            btnTinh.Size = new Size(118, 64);
             btnTinh.TabIndex = 7;
             btnTinh.Text = "Tính";
             btnTinh.UseVisualStyleBackColor = true;
             btnTinh.Click += btnTinh_Click;
             // 
-            // Form1
+            // Bai1
             // 
             AcceptButton = btnTinh;
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -123,7 +123,7 @@
             Controls.Add(lblNum2);
             Controls.Add(lblNum1);
             Controls.Add(lblHeader);
-            Name = "Form1";
+            Name = "Bai1";
             Text = "Lab1_Bai1";
             ResumeLayout(false);
             PerformLayout();

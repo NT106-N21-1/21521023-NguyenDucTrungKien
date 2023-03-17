@@ -34,8 +34,8 @@
             }
             else
             {
-                num1 = Int32.Parse(txtNum1.Text);
-                num2 = Int32.Parse(txtNum2.Text);
+                num1 = int.Parse(txtNum1.Text);
+                num2 = int.Parse(txtNum2.Text);
                 result = num1 + num2;
                 txtResult.Text = result.ToString();
             }
