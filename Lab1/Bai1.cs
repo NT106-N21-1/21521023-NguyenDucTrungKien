@@ -1,8 +1,8 @@
 ﻿namespace Lab1
 {
-    public partial class Form1 : Form
+    public partial class Bai1 : Form
     {
-        public Form1()
+        public Bai1()
         {
             InitializeComponent();
         }
