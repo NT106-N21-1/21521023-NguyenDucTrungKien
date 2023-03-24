@@ -40,7 +40,7 @@ namespace Lab1
                 num = int.Parse(txtNum.Text);
                 if (num < 0 || num > 9)
                 {
-                    MessageBox.Show("Vui lòng nhập số nguyên từ 0 đến 9", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);                    
+                    MessageBox.Show("Vui lòng nhập số nguyên từ 0 đến 9", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtResult.Text = "";
                 }
                 else

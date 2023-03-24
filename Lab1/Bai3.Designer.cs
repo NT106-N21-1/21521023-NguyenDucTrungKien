@@ -40,24 +40,26 @@
             // lblNum
             // 
             lblNum.AutoSize = true;
+            lblNum.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblNum.Location = new Point(23, 74);
             lblNum.Name = "lblNum";
-            lblNum.Size = new Size(264, 25);
+            lblNum.Size = new Size(286, 28);
             lblNum.TabIndex = 0;
             lblNum.Text = "Nhập vào số nguyên từ 0 đến 9";
             // 
             // lblResult
             // 
             lblResult.AutoSize = true;
+            lblResult.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblResult.Location = new Point(23, 243);
             lblResult.Name = "lblResult";
-            lblResult.Size = new Size(72, 25);
+            lblResult.Size = new Size(79, 28);
             lblResult.TabIndex = 1;
             lblResult.Text = "Kết quả";
             // 
             // txtNum
             // 
-            txtNum.Location = new Point(293, 71);
+            txtNum.Location = new Point(315, 74);
             txtNum.Name = "txtNum";
             txtNum.Size = new Size(150, 31);
             txtNum.TabIndex = 2;
@@ -67,7 +69,7 @@
             txtResult.Location = new Point(23, 290);
             txtResult.Name = "txtResult";
             txtResult.ReadOnly = true;
-            txtResult.Size = new Size(264, 31);
+            txtResult.Size = new Size(286, 31);
             txtResult.TabIndex = 3;
             // 
             // btnDoc
