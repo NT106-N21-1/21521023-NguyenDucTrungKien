@@ -102,6 +102,7 @@
             btnThoat.UseVisualStyleBackColor = true;
             btnThoat.Click += btnThoat_Click;
             // 
+            //
             // Bai3
             // 
             AcceptButton = btnDoc;
