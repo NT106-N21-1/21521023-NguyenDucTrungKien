@@ -59,6 +59,15 @@ namespace Lab1
             }
             if (count1 != 0 || count2 != 0 || count3 != 0 || countDot1 > 1 || countDot2 > 1 || countDot3 > 1)
                 MessageBox.Show("Số không hợp lệ, vui lòng nhập lại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else if(txtNum1.Text == "" || txtNum2.Text == "" || txtNum3.Text == "")
+            {
+                txtNum1.Text = "";
+                txtNum2.Text = "";
+                txtNum3.Text = "";
+                txtMax.Text = "";
+                txtMin.Text = "";
+                MessageBox.Show("Vui lòng nhập đầy đủ các số!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
                 num1 = float.Parse(txtNum1.Text);
