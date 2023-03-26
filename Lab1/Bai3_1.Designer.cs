@@ -39,9 +39,10 @@
             // 
             // btnThoat
             // 
-            btnThoat.Location = new Point(630, 305);
+            btnThoat.Location = new Point(504, 244);
+            btnThoat.Margin = new Padding(2);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(120, 60);
+            btnThoat.Size = new Size(96, 48);
             btnThoat.TabIndex = 13;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = true;
@@ -49,18 +50,21 @@
             // 
             // btnXoa
             // 
-            btnXoa.Location = new Point(630, 196);
+            btnXoa.Location = new Point(504, 157);
+            btnXoa.Margin = new Padding(2);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(120, 60);
+            btnXoa.Size = new Size(96, 48);
             btnXoa.TabIndex = 12;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnDoc
             // 
-            btnDoc.Location = new Point(630, 86);
+            btnDoc.Location = new Point(504, 69);
+            btnDoc.Margin = new Padding(2);
             btnDoc.Name = "btnDoc";
-            btnDoc.Size = new Size(120, 60);
+            btnDoc.Size = new Size(96, 48);
             btnDoc.TabIndex = 11;
             btnDoc.Text = "Đọc";
             btnDoc.UseVisualStyleBackColor = true;
@@ -68,26 +72,29 @@
             // 
             // txtResult
             // 
-            txtResult.Location = new Point(51, 308);
+            txtResult.Location = new Point(41, 246);
+            txtResult.Margin = new Padding(2);
             txtResult.Name = "txtResult";
             txtResult.ReadOnly = true;
-            txtResult.Size = new Size(286, 31);
+            txtResult.Size = new Size(230, 27);
             txtResult.TabIndex = 10;
             // 
             // txtNum
             // 
-            txtNum.Location = new Point(343, 92);
+            txtNum.Location = new Point(297, 73);
+            txtNum.Margin = new Padding(2);
             txtNum.Name = "txtNum";
-            txtNum.Size = new Size(150, 31);
+            txtNum.Size = new Size(121, 27);
             txtNum.TabIndex = 9;
             // 
             // lblResult
             // 
             lblResult.AutoSize = true;
             lblResult.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblResult.Location = new Point(51, 261);
+            lblResult.Location = new Point(41, 209);
+            lblResult.Margin = new Padding(2, 0, 2, 0);
             lblResult.Name = "lblResult";
-            lblResult.Size = new Size(79, 28);
+            lblResult.Size = new Size(69, 23);
             lblResult.TabIndex = 8;
             lblResult.Text = "Kết quả";
             // 
@@ -95,19 +102,20 @@
             // 
             lblNum.AutoSize = true;
             lblNum.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNum.Location = new Point(41, 92);
+            lblNum.Location = new Point(33, 74);
+            lblNum.Margin = new Padding(2, 0, 2, 0);
             lblNum.Name = "lblNum";
-            lblNum.Size = new Size(296, 28);
+            lblNum.Size = new Size(260, 23);
             lblNum.TabIndex = 7;
             lblNum.Text = "Nhập vào số nguyên có 3 chữ số";
             // 
             // Bai3_1
             // 
             AcceptButton = btnDoc;
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnThoat;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(640, 360);
             Controls.Add(btnThoat);
             Controls.Add(btnXoa);
             Controls.Add(btnDoc);
@@ -115,6 +123,7 @@
             Controls.Add(txtNum);
             Controls.Add(lblResult);
             Controls.Add(lblNum);
+            Margin = new Padding(2);
             Name = "Bai3_1";
             Text = "Bai3_1";
             ResumeLayout(false);
