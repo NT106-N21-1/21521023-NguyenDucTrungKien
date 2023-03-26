@@ -30,6 +30,16 @@
             }
             if (count1 != 0 || count2 != 0)
             {
+                txtNum1.Text = "";
+                txtNum2.Text = "";
+                txtResult.Text = "";
+                MessageBox.Show("Vui lòng nhập số nguyên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (txtNum1.Text == "" || txtNum2.Text == "")
+            {
+                txtNum1.Text = "";
+                txtNum2.Text = "";
+                txtResult.Text = "";
                 MessageBox.Show("Vui lòng nhập số nguyên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else

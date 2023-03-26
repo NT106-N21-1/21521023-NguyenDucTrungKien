@@ -93,7 +93,12 @@ namespace Lab1
                 MessageBox.Show("Vui lòng nhập số nguyên có 3 chữ số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtResult.Text = "";
             }
-            if (count > 3)
+            else if (count > 3)
+            {
+                MessageBox.Show("Vui lòng nhập số nguyên có 3 chữ số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtResult.Text = "";
+            }
+            else if (txtNum.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập số nguyên có 3 chữ số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtResult.Text = "";
@@ -238,6 +243,12 @@ namespace Lab1
                     }
                 }
             }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            txtNum.Text = "";
+            txtResult.Text = "";
         }
     }
 }

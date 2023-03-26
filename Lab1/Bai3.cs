@@ -35,6 +35,11 @@ namespace Lab1
                 MessageBox.Show("Vui lòng nhập số nguyên từ 0 đến 9", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtResult.Text = "";
             }
+            else if(txtNum.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập số nguyên từ 0 đến 9", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtResult.Text = "";
+            }    
             else
             {
                 num = int.Parse(txtNum.Text);
