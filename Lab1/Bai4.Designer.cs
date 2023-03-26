@@ -199,11 +199,8 @@
         private Button btnTinh;
         private TextBox txtKhoangCach;
         private TextBox txtTien;
-        private Label lblXangInfo;
-        private Label label6;
         private Label lbl_Info_Xe;
         private Label lbl_Info_Xang;
-        private Label label8;
         private Label lbl_Donvi_km;
         private Label lbl_Donvi_VND;
     }
