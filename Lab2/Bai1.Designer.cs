@@ -37,6 +37,7 @@
             // 
             rtxtShow.Location = new Point(359, 12);
             rtxtShow.Name = "rtxtShow";
+            rtxtShow.ReadOnly = true;
             rtxtShow.Size = new Size(429, 426);
             rtxtShow.TabIndex = 0;
             rtxtShow.Text = "";
