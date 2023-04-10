@@ -6,9 +6,6 @@ namespace Lab2
         {
             InitializeComponent();
         }
-
-
-
         private void btnGhiFile_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
