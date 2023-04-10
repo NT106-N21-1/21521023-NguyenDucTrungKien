@@ -56,7 +56,7 @@
             // btnGhiFile
             // 
             btnGhiFile.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            btnGhiFile.Location = new Point(28, 155);
+            btnGhiFile.Location = new Point(28, 148);
             btnGhiFile.Name = "btnGhiFile";
             btnGhiFile.Size = new Size(270, 90);
             btnGhiFile.TabIndex = 2;
