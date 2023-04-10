@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            rtxtShow = new RichTextBox();
+            rtbShow = new RichTextBox();
             btnDocFile = new Button();
             btnGhiFile = new Button();
             SuspendLayout();
             // 
-            // rtxtShow
+            // rtbShow
             // 
-            rtxtShow.Location = new Point(359, 12);
-            rtxtShow.Name = "rtxtShow";
-            rtxtShow.ReadOnly = true;
-            rtxtShow.Size = new Size(429, 426);
-            rtxtShow.TabIndex = 0;
-            rtxtShow.Text = "";
+            rtbShow.Location = new Point(359, 12);
+            rtbShow.Name = "rtbShow";
+            rtbShow.ReadOnly = true;
+            rtbShow.Size = new Size(429, 426);
+            rtbShow.TabIndex = 0;
+            rtbShow.Text = "";
             // 
             // btnDocFile
             // 
@@ -71,7 +71,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnGhiFile);
             Controls.Add(btnDocFile);
-            Controls.Add(rtxtShow);
+            Controls.Add(rtbShow);
             Name = "Bai1";
             Text = "Bai1";
             ResumeLayout(false);
@@ -79,7 +79,7 @@
 
         #endregion
 
-        private RichTextBox rtxtShow;
+        private RichTextBox rtbShow;
         private Button btnDocFile;
         private Button btnGhiFile;
     }

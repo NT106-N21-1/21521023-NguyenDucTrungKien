@@ -17,9 +17,9 @@ namespace Lab2
             {
                 FileStream fs = new FileStream(sfd.FileName, FileMode.CreateNew);
                 StreamWriter sw = new StreamWriter(fs);
-                for (int i = 0; i < rtxtShow.Text.Length; i++)
+                for (int i = 0; i < rtbShow.Text.Length; i++)
                 {
-                    sw.Write(rtxtShow.Text[i].ToString().ToUpper());
+                    sw.Write(rtbShow.Text[i].ToString().ToUpper());
                 }
                 sw.Close();
             }
@@ -34,9 +34,8 @@ namespace Lab2
                 string filePath = ofd.FileName;
                 FileStream fs = new FileStream(filePath, FileMode.Open);
                 StreamReader sr = new StreamReader(fs);
-                rtxtShow.Text = sr.ReadToEnd();
+                rtbShow.Text = sr.ReadToEnd();
                 fs.Close();
-
             }
 
         }
