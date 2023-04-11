@@ -25,7 +25,7 @@ namespace Lab2
             sfd.ShowDialog();
             if (sfd.FileName != "")
             {
-                //File.WriteAllText(sfd.FileName + ".txt", rtbShow.Text);
+                File.WriteAllText(sfd.FileName + ".txt", rtbShow.Text);
                 using FileStream originateFileStream = File.Open(sfd.FileName + ".txt", FileMode.Open);
                 using FileStream compressedFileStream = File.Create(sfd.FileName + ".gz");
                 using var compressor = new GZipStream(compressedFileStream, CompressionMode.Compress);
