@@ -37,6 +37,7 @@ namespace Lab3
             listenerSocket.Listen(-1);
             clientSocket = listenerSocket.Accept();
             lv_Show.Items.Add(new ListViewItem("New client connected!"));
+            lv_Show.Items.Add(new ListViewItem("Telnet is running on " + ipepServer.Address + ':' + ipepServer.Port));
             while (clientSocket.Connected)
             {
                 string text = "";
@@ -45,7 +46,7 @@ namespace Lab3
                     receivedBytes = clientSocket.Receive(recv);
                     text += Encoding.UTF8.GetString(recv);
                 }
-                while (text[text.Length - 1] != '\n' && clientSocket.Connected);
+                while (text[text.Length - 1] != '\n');
                 lv_Show.Items.Add(new ListViewItem(text));
             }
             listenerSocket.Close();
