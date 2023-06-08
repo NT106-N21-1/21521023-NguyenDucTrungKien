@@ -27,34 +27,42 @@ namespace Lab5
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            lv_Message.FullRowSelect = true;
-
-            DateTimeOffset dt = DateTime.Today;
-            var client = new Pop3Client();
-            client.Connect("pop.gmail.com", 995, true);
-            client.Authenticate(txtEmail.Text, txtPass.Text);
-            int countMail = 0;
-            int countCurrentMail = 0;
-            int count = client.GetMessageCount();
-            for (int i = client.GetMessageCount() - 1; i >= client.GetMessageCount() - 20 ; i--)
+            if(txtPass.Text == "")
             {
-                var message = client.GetMessage(i);
-                var subject = message.Subject;
-                var from = message.From;
-                var date = message.Date;
-                ListViewItem item = new ListViewItem();
-                item.Text = subject.ToString();
-                item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = from.ToString() });
-                item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = date.ToString() });
-                lv_Message.Items.Add(item);
-                if (date.Day == dt.Day && date.Month == dt.Month && date.Year == dt.Year)
-                {
-                    countCurrentMail += 1;
-                }
-                countMail++;
+                MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            lblTotalNum.Text = countMail.ToString();
-            lblRecentNum.Text = countCurrentMail.ToString();
+            else
+            {
+                btnLogin.Enabled = false;
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lv_Message.FullRowSelect = true;
+
+                DateTimeOffset dt = DateTime.Today;
+                var client = new Pop3Client();
+                client.Connect("pop.gmail.com", 995, true);
+                client.Authenticate(txtEmail.Text, txtPass.Text);
+                int countMail = 0;
+                int countCurrentMail = 0;
+                for (int i = client.GetMessageCount() - 1; i >= client.GetMessageCount() - 20; i--)
+                {
+                    var message = client.GetMessage(i);
+                    var subject = message.Subject;
+                    var from = message.From;
+                    var date = message.Date;
+                    ListViewItem item = new ListViewItem();
+                    item.Text = subject.ToString();
+                    item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = from.ToString() });
+                    item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = date.ToString() });
+                    lv_Message.Items.Add(item);
+                    if (date.Day == dt.Day && date.Month == dt.Month && date.Year == dt.Year)
+                    {
+                        countCurrentMail += 1;
+                    }
+                    countMail++;
+                }
+                lblTotalNum.Text = countMail.ToString();
+                lblRecentNum.Text = countCurrentMail.ToString();
+            }
         }
     }
 }
