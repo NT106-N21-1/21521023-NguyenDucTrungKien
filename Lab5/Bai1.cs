@@ -19,7 +19,7 @@ namespace Lab5
 
             var client = new SmtpClient();
             client.Connect("smtp.gmail.com", 465, true);
-            client.Authenticate("trungkiennguyen2003@gmail.com", "xqpjjgpwusxjxnpr");
+            client.Authenticate("trungkiennguyen2003@gmail.com", "bdjmomnrdwaaqptu");
 
             for(int i = 0; i < txtFrom.Text.Length; i++)
             {
