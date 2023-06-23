@@ -2,9 +2,9 @@
 using System.Runtime;
 namespace Lab6
 {
-    public partial class Form1 : Form
+    public partial class Bai1 : Form
     {
-        public Form1()
+        public Bai1()
         {
             InitializeComponent();
         }
@@ -13,6 +13,7 @@ namespace Lab6
         {
             int countChar = 0;
             txtMaHoa.Text = "";
+            txtGiaiMa.Text = "";
             if (txtShift.Text == "" || txt_Input.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -57,6 +58,7 @@ namespace Lab6
         private void btnGiaiMa_Click(object sender, EventArgs e)
         {
             int countChar = 0;
+            txtMaHoa.Text = "";
             txtGiaiMa.Text = "";
             if (txtShift.Text == "" || txt_Input.Text == "")
             {
